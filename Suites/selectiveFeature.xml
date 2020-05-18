@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite with Pipe saperated Feature Files Flow">
+
+	<test name="Test of feature File">
+		<parameter name="featureFiles" value="TestFeature.feature" /><!-- PipeSaperated Feature Files in a flow sequence -->
+		<classes>
+			<class
+				name="com.myproject.qa.testing.framework.bdd.runner.BddTestFlowRunner" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
