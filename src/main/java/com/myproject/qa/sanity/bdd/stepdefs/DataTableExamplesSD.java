@@ -14,7 +14,7 @@ public class DataTableExamplesSD {
 	    
 	}
 
-	@Then("^user verify title  using list$")
+	@Then("^user verify title using list$")
 	public void user_verify_title_using_list(List<String> arg1) throws Throwable {
 		  System.out.println(arg1.get(0));
 	    
@@ -38,5 +38,12 @@ public class DataTableExamplesSD {
 	public void user_launches_site_again_and_verify_title_using_dataTable(DataTable arg1) throws Throwable {
 		  System.out.println(arg1.raw().get(0).get(0)+"--"+arg1.raw().get(0).get(1));
 	    
+	}
+	
+	@When("^user launches site again and verify title using List of Maps$")
+	public void user_launches_site_again_and_verify_title_using_List_of_Maps(List<Map<String, String>> arg1) throws Throwable {
+		for(Map<String, String> map : arg1){
+			System.out.println(map.get("url")+" - "+map.get("title"));
+		}
 	}
 }
