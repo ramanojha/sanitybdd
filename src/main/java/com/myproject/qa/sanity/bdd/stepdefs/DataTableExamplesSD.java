@@ -1,11 +1,12 @@
 package com.myproject.qa.sanity.bdd.stepdefs;
 
+
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
 import java.util.List;
 import java.util.Map;
-
-import cucumber.api.DataTable;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 public class DataTableExamplesSD {
 	@When("^user launches site \"([^\"]*)\"$")
@@ -36,7 +37,7 @@ public class DataTableExamplesSD {
 
 	@When("^user launches site again and verify title using dataTable$")
 	public void user_launches_site_again_and_verify_title_using_dataTable(DataTable arg1) throws Throwable {
-		  System.out.println(arg1.raw().get(0).get(0)+"--"+arg1.raw().get(0).get(1));
+		  System.out.println(arg1.cell(0, 1)+"--"+arg1.cell(0, 1));
 	    
 	}
 	

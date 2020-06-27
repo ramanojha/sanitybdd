@@ -1,4 +1,4 @@
-Feature: As a user do a google search for keywords 
+Feature: As a user do a google search for keywords using data table examples
 @Smoke
 Scenario Outline: Launch site and do keyword search 
 	When user launches site "https://www.google.com/" 

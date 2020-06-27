@@ -4,7 +4,8 @@ Feature: As a user do a google search for keywords
   	When site is launched "https://www.google.com/"
   	Then verify title "Google"
     When enter "<keyword>" and hit search
-    Then verify "<keyword>" is searched
+    Then verify "<keyword>" is searched 
+    
     
     Examples:
 	 | keyword  |
